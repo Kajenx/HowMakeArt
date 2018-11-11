@@ -19,10 +19,9 @@
 }
 
 body {
-	text-align: center; font-size: 14pt;
-	
-	font-family: Trebuchet MS, Sans-Serif;
-	
+	text-align: center;
+	font-size: 14pt;	
+	font-family: Trebuchet MS, Sans-Serif;	
 
 	color: var(--text-color);
 	background-color: var(--line-color);
@@ -71,20 +70,3 @@ hr {
 	background: url("LayoutImages/OpalTexture.png") repeat, linear-gradient(to bottom right, var(--accent-color1) 0%, var(--accent-color2) 100%);
 	box-shadow: 0px 0px 10px var(--shadow-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

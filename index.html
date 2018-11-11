@@ -2,8 +2,52 @@
 <html>
 
 <head>
+	
 	<title>How Make Art?!</title>
+	
 	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+				
+	<script src="jquery-3.3.1.min.js"></script>		
+		
+	<script> 
+		$(function() {})
+		
+		function getUrlVars() {
+			var vars = [], hash;
+			var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+			for(var i = 0; i < hashes.length; i++) {
+				hash = hashes[i].split('=');
+				vars.push(hash[0]);
+				vars[hash[0]] = hash[1];
+			}
+			return vars;
+		}	
+		
+		$(function(){
+			var temp = getUrlVars()["page"];
+			
+			if (temp) {
+			
+				
+				$.ajax({
+					url: temp + ".html",
+					success: function(data){
+						$("#page").load(temp + ".html"); 
+					},
+					error: function(data){
+						$("#page").load("error.html"); 
+					},
+				})
+			
+			
+						
+			} else {
+				$("#page").load("home.html"); 
+			}
+		});
+	</script> 
+
+	
 </head>
 
 <body>
@@ -16,25 +60,15 @@
 
 		<div id="content">
 			
-			There would be some kind of introduction like this, I suppose.<br>
-			<br>
-			<br>
-			First draw this.
-			<hr>
-			Then draw this.
-			<hr>
-			Then do something like this
-			<hr>
-			Then this.
-
-		</div>
-		
+			<div id="page"></div>
+						
+		</div>	
 
 	</div>
 		
-		<div id="footer">
-			© Copyright Lucas Paakh - don't steal my shix!
-		</div>
+	<div id="footer">
+		© Copyright Lucas Paakh - don't steal my shix!
+	</div>
 
 </body>
 
