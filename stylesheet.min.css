@@ -1,0 +1,7 @@
+:root{--accent-color1:#5cf;--accent-color2:#955;--line-color:#fff;--accent-text-color1:#f92;--accent-text-color2:#033;--footer-text-color1:#fff;--footer-text-color2:#333;--shadow-color:#222;--main-color1:#ddd;--main-color2:#999;--text-color:#555;--bg-color:#333;}
+body{text-align:center;font-size:14pt;font-family:Trebuchet MS,Sans-Serif;color:var(--text-color);background-color:var(--line-color);margin:0px;padding:0px;}
+hr{border:1px solid;margin:20px;}
+#container{min-height:94vh;background:linear-gradient(to bottom right,var(--main-color1) 0%,var(--main-color2) 100%);}
+#header{padding:40px;padding-left:80px;text-align:left;font-weight:bold;font-size:45px;color:var(--accent-text-color1);text-shadow:2px 2px 3px var(--accent-text-color2);background:url("LayoutImages/OpalTexture.png") repeat,linear-gradient(to bottom right,var(--accent-color1) 0%,var(--accent-color2) 100%);box-shadow:0px 1px 10px var(--shadow-color);}
+#content{padding:40px;}
+#footer{height:6vh;min-height:40px;text-align:center;font-size:10pt;line-height:6vh;color:var(--footer-text-color1);text-shadow:-1px -1px 2px var(--footer-text-color2);background:url("LayoutImages/OpalTexture.png") repeat,linear-gradient(to bottom right,var(--accent-color1) 0%,var(--accent-color2) 100%);box-shadow:0px 0px 10px var(--shadow-color);}
