@@ -25,21 +25,21 @@
 		
 		$(function(){
 			var temp = getUrlVars()["page"];
-			
+						
 			if (temp) {
 			
+				var tempurl = "tutorials/" + temp + "/page.html";
+				
 				
 				$.ajax({
-					url: temp + ".html",
+					url: tempurl,
 					success: function(data){
-						$("#page").load(temp + ".html"); 
+						$("#page").load(tempurl); 
 					},
 					error: function(data){
 						$("#page").load("error.html"); 
 					},
 				})
-			
-			
 						
 			} else {
 				$("#page").load("home.html"); 
