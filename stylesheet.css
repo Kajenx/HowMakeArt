@@ -4,10 +4,9 @@
 	--line-color: #fff;
 
 	--accent-text-color1: #f92;
-	--accent-text-color2: #033;
-
-	--footer-text-color1: #fff;
-	--footer-text-color2: #333;
+	--accent-text-color2: #a0a;
+	--accent-shadow-color: #033;
+	--accent-hilite-color: #ddd;
 
 	--shadow-color: #222;
 
@@ -19,8 +18,8 @@
 }
 
 body {
-	text-align: center;
-	font-size: 14pt;	
+	text-align: left;
+	font-size: 18pt;	
 	font-family: Trebuchet MS, Sans-Serif;	
 
 	color: var(--text-color);
@@ -32,7 +31,28 @@ body {
 
 hr {
 	border: 1px solid;
-	margin: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+a:link {
+    color: var(--accent-text-color2);
+	text-decoration: none;
+}
+
+a:visited {
+    color: var(--accent-text-color2);
+	text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-text-color1);
+	text-decoration: none;
+}
+
+a:active {
+    color: var(--accent-text-color1);
+	text-decoration: none;
 }
 
 #container {	
@@ -46,16 +66,16 @@ hr {
 	
 	text-align: left;
 	font-weight:bold;
-	font-size: 45px;
+	font-size: 2em;
 	color: var(--accent-text-color1);
-	text-shadow: 2px 2px 3px var(--accent-text-color2);
+	text-shadow: 2px 2px 3px var(--accent-shadow-color);
 	
 	background: url("LayoutImages/OpalTexture.png") repeat, linear-gradient(to bottom right, var(--accent-color1) 0%, var(--accent-color2) 100%);
 	box-shadow: 0px 1px 10px var(--shadow-color);
 }
 
 #content {
-	padding: 40px;
+	padding: 80px;
 }
 
 #footer {
@@ -64,8 +84,8 @@ hr {
 	
 	text-align: center; font-size: 10pt;
 	line-height: 6vh;
-	color: var(--footer-text-color1);
-	text-shadow: -1px -1px 2px var(--footer-text-color2);
+	color: var(--accent-hilite-color);
+	text-shadow: 0px 0px 15px var(--accent-hilite-color);
 	
 	background: url("LayoutImages/OpalTexture.png") repeat, linear-gradient(to bottom right, var(--accent-color1) 0%, var(--accent-color2) 100%);
 	box-shadow: 0px 0px 10px var(--shadow-color);
