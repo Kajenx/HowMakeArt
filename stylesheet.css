@@ -6,7 +6,10 @@
 	--accent-text-color1: #f92;
 	--accent-text-color2: #a0a;
 	--accent-shadow-color: #033;
-	--accent-hilite-color: #ddd;
+	--accent-hilite-color: #ddd;	
+	
+	--img-border-color: #f92;
+	--img-shadow-color: #666;
 
 	--shadow-color: #222;
 
@@ -18,9 +21,10 @@
 }
 
 body {
-	text-align: left;
-	font-size: 18pt;	
-	font-family: Trebuchet MS, Sans-Serif;	
+	text-align: justify;
+	font-size: 16pt;	
+	font-family: Courier, Trebuchet MS, Sans-Serif;	
+	font-weight: bold;
 
 	color: var(--text-color);
 	background-color: var(--line-color);
@@ -29,10 +33,24 @@ body {
 	padding: 0px;
 }
 
-hr {
-	border: 1px solid;
-	margin-top: 20px;
+hr {	
+    clear: both;
+	border: 0;
+	border-bottom: 2px solid;
+	padding-top:20px;
+	margin-bottom: 40px;
+}
+
+img {
+	float: left;
+	margin-right: 40px;
 	margin-bottom: 20px;
+	box-shadow: 3px 3px 10px var(--img-shadow-color);
+	border: 4px solid var(--img-border-color);
+}
+
+textblock {
+	float: left;
 }
 
 a:link {
@@ -61,6 +79,7 @@ a:active {
 }
 
 #header {
+	font-family: Trebuchet MS, Sans-Serif;	
 	padding: 40px;
 	padding-left: 80px;
 	
@@ -76,6 +95,7 @@ a:active {
 
 #content {
 	padding: 80px;
+	padding-top: 30px;
 }
 
 #footer {
