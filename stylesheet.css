@@ -21,8 +21,8 @@
 }
 
 body {
-	text-align: justify;
-	font-size: 16pt;	
+	
+	font-size: 14pt;	
 	font-family: Courier, Trebuchet MS, Sans-Serif;	
 	font-weight: bold;
 
@@ -47,10 +47,6 @@ img {
 	margin-bottom: 20px;
 	box-shadow: 3px 3px 10px var(--img-shadow-color);
 	border: 4px solid var(--img-border-color);
-}
-
-textblock {
-	float: left;
 }
 
 a:link {
@@ -85,7 +81,7 @@ a:active {
 	
 	text-align: left;
 	font-weight:bold;
-	font-size: 2em;
+	font-size: 2.5em;
 	color: var(--accent-text-color1);
 	text-shadow: 2px 2px 3px var(--accent-shadow-color);
 	
